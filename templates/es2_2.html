@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>2-2 Sem</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/logo.png"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/stylesheet.css') }}">
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/bar.css') }}">
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/table.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">H&S
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                <a href="{{ url_for('h1_2') }}">1-2 Sem</a>
+                
+              </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">ECE
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="{{ url_for('es2_1') }}">2-1 Sem</a>
+                <a href="{{ url_for('es2_2') }}">2-2 Sem</a>
+                <a href="{{ url_for('es3_1') }}">3-1 Sem</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">CSE
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="{{ url_for('cs2_1') }}">2-1 Sem</a>
+                <a href="{{ url_for('cs2_2') }}">2-2 Sem</a>
+                <a href="{{ url_for('cs3_1') }}">3-1 Sem</a>
+              </div>
+        </div>
+    </div> 
+    <h style="background-color: red; color: white; margin-top: 4%; text-align: center;">
+        Click on unit number of specific subject to download the file</h>
+<table>
+    <tr>
+    <th>Unit No</th>
+    <th>PDC</th>
+    <th>LDICA</th>
+    <th>EMTL</th>
+    <th>DDCO</th>
+    <th>CS</th>
+    </tr>
+    <tr>
+      <th> 1.</th>
+      <th><a href="../static/notes/es2_2/pdc/UNIT-1.pdf">Unit-1</a></th> 
+      <th><a href="../static/notes/es2_2/ldica/unit-1_1.pdf">Unit-1_1</a> <br> <a href="../static/notes/es2_2/ldica/unit-1_2.pdf">Unit-1_2</a></th>
+      <th><a href="../static/notes/es2_2/emtl/EMTL UNIT 1.pdf">Unit-1</a></th>
+      <th><a href="../static/notes/es2_2/ddco/DDCO UNIT 1.pdf">Unit-1_1</a> <br> <a href="../static/notes/es2_2/ddco/DDCO_Notes_unit_1.pdf">Unit-1_2</a></th>
+      <th><a href="../static/notes/es2_2/cs/Control Systems Notes Unit 1.pdf">Unit-1</a></th> 
+    </tr>
+    <tr>
+    <th>2.</th>
+    <th><a href="../static/notes/es2_2/pdc/UNIT-2.pdf">Unit-2</a></th>
+    <th><a href="../static/notes/es2_2/ldica/unit-2.pdf">Unit-2_1</a><br><a href="../static/notes/es2_2/ldica/unit-2_2.pdf">Unit-2_2</a></th> 
+    <th><a href="../static/notes/es2_2/emtl/EMTL UNIT 2.pdf">Unit-2</a></th>
+    <th><a href="../static/notes/es2_2/ddco/DDCO-UNIT-II_ NOTES.pdf">Unit-2</a></th>
+    <th><a href="../static/notes/es2_2/cs/Control Systems Unit 2 Notes.pdf">Unit-2</a></th>    
+    </tr>
+    <tr>
+        <th>3.</th>
+        <th><a href="../static/notes/es2_2/pdc/UNIT-3.pdf">Unit-3</a></th>
+        <th><a href="../static/notes/es2_2/ldica/unit-3_1.pdf">Unit-3_1</a>
+        <br> <a href="../static/notes/es2_2/ldica/unit-3_2.pdf">Unit-3_2</a></th>
+        <th><a href="../static/notes/es2_2/emtl/EMTL UNIT3.pdf">Unit-3</a></th>
+        <th><a href="../static/notes/es2_2/ddco/UNIT-3  Notes.pdf">Unit-3</a></th>
+        <th><a href="../static/notes/es2_2/cs/Control Systems Unit 3(part 1) RH criterion Notes.pdf">Unit-3</a></th>         
+    </tr>
+    <tr>
+        <th>4.</th>
+        <th><a href="../static/notes/es2_2/pdc/UNIT-4.pdf">Unit-4</a></th>
+        <th><a href="../static/notes/es2_2/ldica/unit-4.pptx">Unit-4_1</a><br>
+        <a href="../static/notes/es2_2/ldica/unit-4_1.pdf">Unit-4_2</a><br>
+    <a href="../static/notes/es2_2/ldica/unit-4_2.pdf">Unit-4_3</a></th>
+    <th><a href="../static/notes/es2_2/emtl/EMTL UNIT 4.pdf">Unit-4</a></th>
+    <th><a href="../static/notes/es2_2/ddco/DDCO UNIT IV.pdf">Unit-4</a></th>
+    <th>Not Availabel</th>            
+    </tr>
+    <tr>
+        <th>5.</th>
+        <th><a href="../static/notes/es2_2/pdc/UNIT-5.pdf">Unit-5</a></th>
+        <th><a href="../static/notes/es2_2/ldica/unit-5.pptx">Unit-5</a></th>
+        <th><a href="../static/notes/es2_2/emtl/EMTL UNIT 5.pdf">Unit-5</a></th>
+        <th><a href="../static/notes/es2_2/ddco/DDCO UNIT 5.pdf">Unit-5</a></th>
+        <th><a href="../static/notes/es2_2/cs/Unit 5 Problems.pdf">Unit-5 problems</a>
+        <br> <a href="../static/notes/es2_2/cs/State space analysis.pdf">Unit-5</a></th>     
+
+</table>
+</body>
+</html>

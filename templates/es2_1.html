@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>2-1 Sem</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/logo.png"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/stylesheet.css') }}">
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/bar.css') }}">
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/table.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">H&S
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                <a href="{{ url_for('h1_2') }}">1-2 Sem</a>
+                
+              </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">ECE
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="{{ url_for('es2_1') }}">2-1 Sem</a>
+                <a href="{{ url_for('es2_2') }}">2-2 Sem</a>
+                <a href="{{ url_for('es3_1') }}">3-1 Sem</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">CSE
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="{{ url_for('cs2_1') }}">2-1 Sem</a>
+                <a href="{{ url_for('cs2_2') }}">2-2 Sem</a>
+                <a href="{{ url_for('cs3_1') }}">3-1 Sem</a>
+              </div>
+        </div>
+    </div> 
+    <h style="background-color: red; color: white; margin-top: 4%; text-align: center;">
+        Click on unit number of specific subject to download the file</h>
+<table>
+    <tr>
+    <th>Unit No</th>
+    <th>NMCA</th>
+    <th>NAM</th>
+    <th>PTSP</th>
+    <th>AE</th>
+    <th>SS</th>
+    </tr>
+    <tr>
+      <th> 1.</th>
+      <th><a href="../static/notes/es2_1/nmca/unit-1.pdf">Unit-1</a></th> 
+      <th><a href="../static/notes/es2_1/nam/unit-1.pdf">Unit-1</a></th>  
+      <th><a href="../static/notes/es2_1/ptsp/unit-1.pptx">Unit-1</a><br><a href="../static/notes/es2_1/ptsp/unit-1 (2).pptx">Unit1_2</a> </th>  
+      <th><a href="../static/notes/es2_1/AE/unit-1.pdf">Unit-1</a></th> 
+      <th><a href="../static/notes/es2_1/ss/unit-1.pptx">Unit-1</a></th>  
+    </tr>
+    <tr>
+    <th>2.</th>
+    <th><a href="../static/notes/es2_1/nmca/unit-2.pdf">Unit-2</a></th>
+    <th><a href="../static/notes/es2_1/nam/unit-2.pdf">Unit-2</a></th>
+    <th><a href="../static/notes/es2_1/ptsp/unit-2.pdf">Unit-2</a></th>
+    <th><a href="../static/notes/es2_1/AE/unit-2.pdf">Unit-2</a></th>
+    <th><a href="../static/notes/es2_1/ss/unit-2.pdf">Unit-2</a></th>
+    </tr>
+    <tr>
+        <th>3.</th>
+        <th><a href="../static/notes/es2_1/nmca/unit-3.pdf">Unit-3</a></th>
+        <th><a href="../static/notes/es2_1/nam/unit-3.pdf">Unit-3</a></th>
+        <th>Not Availabel</th>
+        <th><a href="../static/notes/es2_1/AE/unit-3.pdf">Unit-3</a></th>
+        <th><a href="../static/notes/es2_1/ss/unit-3_1.pdf">Unit-3_1</a> <br> <a href="../static/notes/es2_1/ss/unit-3_2.pdf">Unit-3_2</a></th>    
+    </tr>
+    <tr>
+        <th>4.</th>
+        <th><a href="../static/notes/es2_1/nmca/unit-4.pdf">Unit-4</a></th>  
+        <th><a href="../static/notes/es2_1/nam/unit-4_1.pdf">Unit-4_1</a><br> <a href="../static/notes/es2_1/nam/unit-4_2.pdf">Unit-4_2</a></th>
+        <th><a href="../static/notes/es2_1/ptsp/unit-4.pptx">Unit-4</a></th>
+        <th><a href="../static/notes/es2_1/AE/unit-4.pdf">Unit-4</a></th>
+        <th><a href="../static/notes/es2_1/ss/unit-4.pdf">Unit-4</a></th>        
+    </tr>
+    <tr>
+        <th>5.</th>
+        <th><a href="../static/notes/es2_1/nmca/unit-5.pdf">Unit-5</a></th>
+        <th><a href="../static/notes/es2_1/nam/unit-5.docx">Unit-5</a></th>
+        <th>Not Availabel</th>
+        <th><a href="../static/notes/es2_1/AE/unit-5.pdf">Unit-5</a></th>
+        <th><a href="../static/notes/es2_1/ss/unit-5.pdf">Unit-5</a></th>          
+    </tr>
+
+</table>
+</body>
+</html>

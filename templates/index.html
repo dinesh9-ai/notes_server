@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/logo.png"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/stylesheet.css') }}">
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/bar.css') }}">
+</head>
+<body>
+<div class="navbar">
+    <a href="{{ url_for('index') }}">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">H&S
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            
+            <a href="{{ url_for('h1_2') }}">1-2 Sem</a>
+          </div>
+    </div>
+    
+    <div class="dropdown">
+        <button class="dropbtn">ECE
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="{{ url_for('es2_1') }}">2-1 Sem</a>
+            <a href="{{ url_for('es2_2') }}">2-2 Sem</a>
+            <a href="{{ url_for('es3_1') }}">3-1 Sem</a>
+          </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">CSE
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="{{ url_for('cs2_1') }}">2-1 Sem</a>
+            <a href="{{ url_for('cs2_2') }}">2-2 Sem</a>
+            <a href="{{ url_for('cs3_1') }}">3-1 Sem</a>
+          </div>
+    </div>
+</div>
+<h1 style="background-color: red; color: white; text-align: center;">The Encylopedia of Notes</h1>
+<p style="left: 0%; color:red; background-color: white;"> Disclaimer:<br>
+    No one are responsible for the notes given in this website.<br>
+    So please check the downloaded notes with your <br>syllabus paper to avoid mistakes.</p>
+    <h3 style="position: absolute; right: 0%; bottom: 0%; color: red;"> Created & maintained by <br> Dineshwar.D</h3>
+</body>
+</html>
