@@ -33,3 +33,9 @@ def cs3_1():
 @app.route("/ci3_1")
 def ci3_1():
     return render_template("ci3_1.html")
+@app.route("/es3_2.html")
+def es3_2():
+    return render_template("es3_2.html")
+@app.route("/cs3_2")
+def cs3_2():
+    return render_template("cs3_2.html")
