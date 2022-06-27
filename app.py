@@ -39,3 +39,6 @@ def es3_2():
 @app.route("/cs3_2")
 def cs3_2():
     return render_template("cs3_2.html")
+@app.route("/cont")
+def cont():
+    return render_template("cont.html")
